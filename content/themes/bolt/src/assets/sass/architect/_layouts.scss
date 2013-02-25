@@ -1,0 +1,51 @@
+*,
+::before,
+::after {
+	@include box-sizing(border-box);
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+}
+
+.wrapper {
+	position:relative;
+	width:100%;
+}
+
+[role="main"] {
+	position: relative;
+	margin-left:0 auto;
+	float:none;
+	width:100%;
+	min-height: 1024px;
+	@include transition(all 0.1s ease-in-out);
+
+}
+
+.col {
+	margin-bottom: $baseSpacing +em;
+
+	@include breakpoint(medium) {
+		margin-bottom:0;
+	}
+}
+
+.container {
+	
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+	padding: $baseSpacing +em;
+
+	@include breakpoint(medium) { min-width:$mediumViewportWidth; }
+	@include breakpoint(xl) { 
+		width:$xlargeViewportWidth; 
+		padding:0; //kill padding at largest breakpoint
+	}
+
+}

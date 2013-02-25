@@ -1,0 +1,9 @@
+{
+  "name": "Bolt",
+  "version": "1.0.0",
+  "main": "./scripts/app.js",
+  "dependencies": {
+    "jquery": "latest",
+    "modernizr": "latest"
+  }
+}

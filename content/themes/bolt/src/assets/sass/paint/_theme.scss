@@ -1,0 +1,147 @@
+html {
+	background: url(../img/bg-stl.jpg) no-repeat center center fixed;
+  @include background-size(cover);
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg-stl.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg-stl.jpg', sizingMethod='scale')";
+}
+
+body {
+	font-size:100%;
+	line-height: $baseLineHeight +em;
+	font-family: $sansSerifStack;
+	color:$bodyTextColor;
+  background:url(../img/dot.png) top center;
+  width:100%;
+  height:100%;
+}
+
+a,
+a:active,
+a:visited {
+	cursor: pointer;
+	text-decoration: none;
+	color:$linkColor;
+}
+
+.nav {
+	background:$panelNavBackgroundColor;
+}
+
+:focus {
+	outline: none;
+}
+
+input[placeholder], 
+[placeholder], 
+*[placeholder],
+::-webkit-input-placeholder,
+::-moz-placeholder {
+	color:$placeholderColor;
+}
+
+.more:after {
+	content: " »";
+	display: inline-block;
+	padding-left: 4px;
+}
+
+.primary-header {
+  background: $black;
+  background:rgba(0,0,0,0.75);
+  height:140px;
+  width:100%;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:9999;
+  -webkit-transition: all 0.2s linear;
+}
+
+.primary-header {
+  .container {
+    padding-top:0;
+    padding-left:50px;
+
+    @include breakpoint(medium) {
+      padding-left:1.5em;
+    }
+  }
+}
+
+.solid-black {
+  background:#000;
+  -webkit-transition: all 0.2s linear;
+}
+
+.tagline {
+  margin-top: 190px;
+}
+
+.main-content {
+  width:100%;
+  position:relative;
+  z-index:9998;
+
+  @include box-shadow(0 0 10px $black);
+
+  section,
+  article {
+    background: $white;
+    padding-top:($baseSpacing * 2)+em;
+    padding-bottom: ($baseSpacing * 2)+em;
+  }
+
+  article:nth-child(even) {
+    background: $grayLighter;
+  }
+
+  .secondary {
+    background: $red;
+    background: rgba(183,31,37,0.95);
+
+    h3,
+    h4,
+    p {
+      color: $white;
+    }
+  }
+
+  .tertiary {
+    .col-9 {
+      margin-bottom: ($baseSpacing/2)+em;
+      padding-bottom: ($baseSpacing/2)+em;
+      border-bottom: 1px solid $grayLighter;
+    }
+  }
+}
+
+.primary-footer { 
+  background: $black;
+  background:rgba(0,0,0,0.85);
+  position:relative;
+  z-index: 9999;
+
+  .container {
+    padding-top:0;
+  }
+
+  ul {
+  	list-style: none;
+  	padding-left:0;
+  }
+
+  a,
+  h3,
+  legend {
+  	color: $white;
+  }
+
+  label {
+  	display: none;
+  }
+
+  legend {
+  	font-size: 0.875em;
+  	margin-bottom: $baseSpacing/2 +em
+  }
+}

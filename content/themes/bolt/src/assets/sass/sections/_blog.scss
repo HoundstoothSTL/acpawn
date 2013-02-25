@@ -1,0 +1,54 @@
+.post-meta {
+	.post-author,
+	.post-comment-count,
+	.post-tags {
+		display:block;
+		padding-bottom:($baseSpacing / 2)+em;
+	}
+}
+
+.pagination {
+	background: $white;
+
+	ul,
+	ol {
+		margin-left: 0;
+		padding-left: 0;
+
+		@include clearfix();
+	}
+
+	li {
+		float:left;
+		display: inline-block;
+		padding:6px 6px 6px 0;
+
+		.page {
+			background: $grayLighter;
+			padding: 6px 12px;
+			color: $grayDarker;
+
+			@include border-radius(2px);
+
+			&.current {
+				background: $grayDark;
+				color: $white;
+			}
+		}
+
+		.prev,
+		.next {
+			background: $red;
+			color: $white;
+			padding: 6px 24px;
+
+			@include border-radius(2px);
+		}
+	}
+}
+
+.comments-section {
+	label {
+		color: $black;
+	}
+}

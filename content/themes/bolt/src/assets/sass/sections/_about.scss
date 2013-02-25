@@ -1,0 +1,17 @@
+.tagline {
+	h2 {
+		span {
+			display:inline-block;
+			background: $black;
+			background: rgba(0,0,0,0.75);
+			color: $white;
+			padding-left: 8px;
+			padding-right: 8px;
+		}
+	}
+}
+
+.staff-member {
+	padding-bottom: $baseSpacing +em;
+	border-bottom: 1px solid $white;
+}
