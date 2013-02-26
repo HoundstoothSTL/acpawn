@@ -18,10 +18,10 @@ $local_db_name = 'acpawn';
 $local_db_user = 'root';
 $local_db_password = 'De54825482';
 
-$staging_db_name = '';
-$staging_db_user = '';
-$staging_db_password = '';
-$staging_db_host = '';
+$staging_db_name = 'db109495_tester';
+$staging_db_user = 'db109495_rob';
+$staging_db_password = 'Welcome@1';
+$staging_db_host = 'internal-db.s109495.gridserver.com';
 
 $prod_db_name = '';
 $prod_db_user = '';
