@@ -23,10 +23,10 @@ $staging_db_user = 'db109495_rob';
 $staging_db_password = 'Welcome@1';
 $staging_db_host = 'internal-db.s109495.gridserver.com';
 
-$prod_db_name = '';
-$prod_db_user = '';
-$prod_db_password = '';
-$prod_db_host = '';
+$prod_db_name = 'db109495_acpawnshop';
+$prod_db_user = 'db109495_rob';
+$prod_db_password = 'Welcome@1';
+$prod_db_host = 'internal-db.s109495.gridserver.com';
 
 $default_theme_name = '';
 
@@ -81,7 +81,7 @@ if ( file_exists( dirname( __FILE__ ) . '/../env_local' ) ) {
 	define('WP_ENV', 'staging');
     define('WP_DEBUG', false);
 	
-	//Production Environment
+	//Staging Environment
 	define('DB_NAME', $staging_db_name);
 	define('DB_USER', $staging_db_user);
 	define('DB_PASSWORD', $staging_db_password);

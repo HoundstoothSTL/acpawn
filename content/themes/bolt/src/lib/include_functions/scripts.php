@@ -1,7 +1,5 @@
 <?php 
 
-$rev = filemtime( get_stylesheet_directory() . '/assets/css/main.min.css');
-
 //*** Enqueue Site Javascripts
 
 function footer_load_javascript_files() {

@@ -19,13 +19,13 @@
 	<link href='http://fonts.googleapis.com/css?family=Titillium+Web:700,300,300italic' rel='stylesheet' type='text/css'>
 
     <!-- Styles : Versioned for Caching -->
-    <link href="<?php echo get_template_directory_uri(); ?>/assets/css/main.css<?php echo '?v=' . filemtime( get_stylesheet_directory() . '/assets/styles/main.css'); ?>" rel="stylesheet">
+    <link href="<?php echo get_template_directory_uri(); ?>/assets/css/main.css" rel="stylesheet">
 	
 	 <!-- Favicon & Touch Icons : Versioned for Caching -->
-    <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/ico/favicon.ico<?php echo '?v=' . filemtime( get_stylesheet_directory() . '/ico/favicon.ico'); ?>">
+    <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/ico/favicon.ico">
 	
     <!-- Layout Scripts (Modernizr, HTML5 Shim) -->
-	<script src="<?php echo get_template_directory_uri(); ?>/assets/js/vendor/modernizr.js<?php echo '?v=' . filemtime( get_stylesheet_directory() . '/assets/scripts/vendor/modernizr.custom.2.6.2.min.js'); ?>"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/assets/js/vendor/modernizr.js"></script>
 	<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
